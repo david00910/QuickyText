@@ -3,7 +3,7 @@
         
         <div class="cont">
         
-        <strong>{{message.user}}</strong>
+        <strong>{{message.user.name}}</strong>
         <p>{{message.message}}</p>
         
         </div>

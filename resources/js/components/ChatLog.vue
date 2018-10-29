@@ -2,6 +2,9 @@
     <div class="chat-log">
 
     <chat-message v-for="message in messages" :message="message"></chat-message>
+    <div class="emtpy" v-show="messages.length === 0">
+        Nothing here yet...
+        </div>
     
 
     </div>
@@ -37,6 +40,11 @@ export default {
     text-align: center;
     padding: 20px 0px 20px 0px;
    
+}
+
+.empty {
+    padding: 1rem;
+    text-align:center;
 }
 
 

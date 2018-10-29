@@ -25,14 +25,6 @@ const app = new Vue({
 
     data: {
         messages: [
-            {
-                message: 'Hey!',
-                user: "John Doe"
-            },
-            {
-                message: 'Hello!',
-                user: "Jane Doe"
-            }
         ]
      
     },
@@ -45,5 +37,10 @@ const app = new Vue({
             // Persist to the database etc
             console.log('message added');
         }
+    },
+    created() {
+        axios.get('/messages').then(response => {
+            this.messages = response.data;
+        });
     }
 });
