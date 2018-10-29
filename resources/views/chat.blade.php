@@ -14,7 +14,7 @@
 
     <div class="container bg-info text-black shadow p-3 mb-5 bg-#0084ff rounded" id="app">
     
-    <h1 class="title">QuickyText</h1>
+    <h1 class="title">Better name</h1>
     <hr>
 
     <chat-log :messages="messages"></chat-log>
